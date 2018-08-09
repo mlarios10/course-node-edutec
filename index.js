@@ -8,7 +8,7 @@ mongoose.Promise = global.Promise;
 //mongoose.connect('mongodb://localhost:27017/zoo');
 mongoose.connect('mongodb://mlarios11:electronica10@ds131971.mlab.com:31971/backend-2018');
 
-app.listen(port);
+app.listen(process.env.PORT || 3000);
 
 console.log('backend is running');
 
